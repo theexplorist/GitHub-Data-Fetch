@@ -18,7 +18,7 @@ for data1 in parsed :
 zip(dat, list1)
 
 with open('micro.csv', 'w', encoding = "ISO-8859-1", newline='') as f:
-    writer = csv.writer(f, delimiter='\t')
+    writer = csv.writer(f, delimiter=',')
     fieldnames = ['Name', 'Commits']
     writer.writerow(fieldnames)
     writer.writerows(zip(dat, list1))
